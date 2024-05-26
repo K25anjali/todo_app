@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app">
+    <div class="container">
+    <div class="todoapp">
+        <h1>To-Do List</h1>
+        <div class="wrapper">
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add</button>
+        </div>
+    </div>
+    <h2>List of task</h2>
+    <p id="error"></p>
+        <ul id="taskList"></ul>
+    </div>
+</div>
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+            <h2>Edit Task</h2>
+            <input type="text" id="editTaskInput">
+            <button onclick="saveEditedTask()">Save</button>
+            <button class="close" onclick="closeEditModal()">Cancle</button>
+        </div>
+    </div>
+
+<div class="image">
+    <img src="https://media4.giphy.com/media/HZrx8kjIA7lyeTqXVM/200w.gif?cid=6c09b952p5b3a153jv2hpmt6lz5kbvjfndnbykp029de6n66&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="">
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

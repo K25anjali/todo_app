@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4ba42;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.image {
+  height: 400px;
+  width: 200px;
+  background-repeat: no-repeat;
+  position: fixed;
+  right: 20%;
+  top: 15%;
+  z-index: -1;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+}
+.app {
+  max-width: 70vw;
+  margin: 50px;
+  margin-right: 30%;
+  margin-top: 150px;
+}
+.container {
+  width: 600px;
+  text-align: center;
+  box-shadow: 0 0 5px #52525266;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #6a6297e0;
+}
+h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+h2 {
+  margin: 1rem;
+}
+p {
+  color: red;
+}
+.todoapp {
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 2.5rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px 30px;
+  margin-right: 20px;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #00007f;
+  transition: all 0.3s;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #4f525c;
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 15px;
+  padding: 1rem 1.5rem;
+  list-style: none;
+  background-color: #f5f5f5;
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+}
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.delete,
+.tick,
+.edit {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.buttons span:hover {
+  background-color: #ddd;
+}
+.delete {
+  color: tomato;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tick {
+  color: #08116e;
+  font-size: 1.1rem;
+}
+.edit {
+  font-weight: bold;
+  color: rgb(15, 179, 69);
+}
+.task {
+  margin-right: 350px;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 15%;
+  top: 44%;
+  width: 600px;
+  overflow: auto;
+  background-color: #6a6297e0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+.modal button {
+  margin: 1rem;
+  padding: 0.5rem 3rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+.modal button:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #153677, #4e085f);
+}
